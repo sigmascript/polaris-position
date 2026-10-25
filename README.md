@@ -1,74 +1,47 @@
-# Polaris Position Plugin (v1.4.1)
+# Polaris Position
 
-In addition to the built-in features and components comes with [Polaris framework](https://github.com/heminsatya/polaris), you can also use a set of useful plugins.
+**Version 1.4.1** · Polaris UI plugin · MIT license
 
-Polaris Position Plugin contains a set of responsive classes for controlling `left`, `right`, `top`, and `bottom` position of HTML elements.
+Responsive positional utility classes for top, right, bottom, and left.
 
+This repository contains the plugin's source and compiled distribution assets. It is maintained separately from [Polaris Core](https://github.com/sigmascript/polaris-core).
 
-## Documentation
+## Install
 
-> Coming soon...
-
-
-## Dependencies
-
-For production, Polaris Position Plugin needs Polaris Framework Core CSS library.
-
-And for development, it depends on:
-
-* [Node.js](https://nodejs.org/en/) need to be installed.
-* [Sass](https://www.npmjs.com/package/sass) as an npm developement package.
-* [Polaris Core](https://www.npmjs.com/package/polaris-core) as an npm developement package.
-
-
-## Get Started
-
-### Install via npm
-
-```
+```bash
 npm install polaris-position
 ```
 
+## Get started
 
-### Use Polaris CDN
+Load the chosen compiled stylesheet in your page after any base styles whose values you want the plugin to override. The plugin provides CSS; no plugin JavaScript initialization is required.
 
-> Coming soon...
+Available production assets in this repository:
 
+- `dist/css/main.min.css`
 
-### Download Polaris Position
+For example, use the appropriate stylesheet from `node_modules/polaris-position/dist/css/` in your application's asset pipeline. A plain HTML project can also copy the required compiled files into its public assets.
 
-[Download Polaris Position](https://github.com/heminsatya/polaris-position/releases)
+## Development
 
-
-### Clone Polaris
-
-You can also clone Polaris Position using [git](https://git-scm.com/):
-
-```
-git clone https://github.com/heminsatya/polaris-position.git
-```
-
-
-### Customize Polaris Position
-
-First, you need to download or clone it, then you need to follow a few easy steps:
-
-* Open up your favourite CLI program.
-* Change directory to the path where Polaris Position extracted:
-```
-cd path-to/polaris-position/
-```
-* Install packages by:
-```
+```bash
 npm install
-```
-Now, you have everything set-up. You can customize it however you want.
-
-Next step after customization is to rebuild the CSS libraries.
-
-* To rebuild the CSS libraries run:
-
-```
 npm run css
-npm run css-dev
 ```
+
+For the complete list of production and watch commands, see [Development](docs/development.md). Development dependencies remain in the plugin repository; they do not need to be deployed with a production website.
+
+## Documentation
+
+- [Documentation index](docs/README.md)
+- [Getting started](docs/getting-started.md)
+- [Development and build commands](docs/development.md)
+- [Changelog](CHANGELOG.md)
+
+## Compatibility
+
+The current package declares `polaris-core` as a development dependency. Before publishing a future version, verify the plugin's Sass imports and compiled output against the selected Core version. Compatibility with Core 1.0.6 has **not yet been verified** in this documentation batch.
+
+## Support and license
+
+Report issues in the [SigmaScript repository](https://github.com/sigmascript/polaris-position/issues) **after its transfer is completed**. Until then, use the repository's currently active issue tracker. Licensed under MIT; see `LICENSE`.
