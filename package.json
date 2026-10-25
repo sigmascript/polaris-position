@@ -19,13 +19,13 @@
     "Web",
     "Framework"
   ],
-  "homepage": "https://github.com/heminsatya/polaris-position#readme",
+  "homepage": "https://github.com/sigmascript/polaris-position#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heminsatya/polaris-position.git"
+    "url": "git+https://github.com/sigmascript/polaris-position.git"
   },
   "bugs": {
-    "url": "https://github.com/heminsatya/polaris-position/issues"
+    "url": "https://github.com/sigmascript/polaris-position/issues"
   },
   "devDependencies": {
     "polaris-core": "1.0.6",
